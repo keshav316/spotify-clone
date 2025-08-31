@@ -1,0 +1,35 @@
+.flex{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexNav{
+    display: flex;
+    gap: 3px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.border{
+    /* border: 2px solid red; */
+    margin: 10px;
+    border-radius: 8px;
+}
+.invert{
+    filter: invert(0.5);
+}
+.invert2{
+    filter: invert(1);
+}
+.playerCircle{
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 100%;
+}

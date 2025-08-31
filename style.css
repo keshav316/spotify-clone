@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Fredoka:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+}
+
+img {
+    z-index: 10px;
+}
+.left {
+    width: 25vw;
+    position: relative;
+    height: 710px;
+}
+
+.right {
+    width: 75vw;
+}
+
+.ColorLogo {
+    filter: invert(1);
+}
+
+.icon {
+    height: 4vh;
+}
+
+.icon:hover {
+    filter: invert(1);
+}
+
+.library {
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.playButton {
+    padding-left: 50%;
+    border-radius: 9999px;
+    padding: 15px;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lib {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.player {
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+
+.placeholder {
+
+    background-color: #1f1f1f;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    width: 400px;
+    border: #1f1f1f;
+
+
+}
+.browse{
+    cursor: pointer;
+}
+.oval:hover {
+    border: 1px solid grey;
+}
+
+.deco {
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.deco:hover {
+    filter: invert(1);
+    color: white;
+}
+
+.this:hover {
+    filter: invert(0);
+}
+
+.home:hover {
+    padding: 10px;
+
+}
+
+.appInstall {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    width: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Premium {
+    width: 164px;
+}
+
+.SignupButton {
+    width: 90px;
+    position: relative;
+    left: 10px;
+}
+
+.mainPlaylist {
+    position: relative;
+    top: 16px;
+    font-family: "Roboto", serif;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+/* Custom Scrollbar */
+.mainPlaylist::-webkit-scrollbar {
+    width: 7px;
+    /* Set the width of the scrollbar */
+    height: 11px;
+    /* Set the height of the scrollbar for horizontal scrollbar */
+}
+
+/* Scrollbar Track */
+.mainPlaylist::-webkit-scrollbar-track {
+    background-color: grey;
+    /* Background color of the scrollbar track */
+    border-radius: 10px;
+    /* Circular border for track */
+}
+
+/* Scrollbar Thumb */
+.mainPlaylist::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.884);
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Circular border for the thumb */
+}
+
+/* Scrollbar Hover Effect */
+.mainPlaylist::-webkit-scrollbar-thumb:hover {
+    background-color: whitesmoke;
+    /* Change color on hover */
+}
+
+.card {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.244);
+    border-radius: 8px;
+    width: 210px;
+    height: auto;
+    /* Adjust to auto to fit content */
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    /* Center-align text elements */
+    
+}
+.card:hover .play{
+    opacity: 1;
+}
+
+.card img {
+    object-fit: cover;
+    /* Use cover to fit the image without distortion */
+    width: 100%;
+    /* Make image width responsive */
+    border-radius: 8px;
+    height: auto;
+}
+
+.Cardcontainer {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+    margin: 10px;
+   
+
+}
+
+.right h1 {
+    font-family: "Roboto", serif;
+    position: relative;
+    left: 30px;
+}
+
+.play {
+    height: 50px;
+    width: 50px;
+    background-color: #1ed760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: absolute;
+    /* Use absolute positioning for better control */
+    top: 145px;
+    /* Adjust position relative to .card */
+    right: 15px;
+    /* Adjust position relative to .card */
+    z-index: 1;
+    /* Ensure play button is on top */
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+
+.play img {
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+}
+.playBar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 76px;
+    position: sticky;
+    bottom: 0px;
+   border-radius: 10px;
+}
+.playBar img{
+    filter: invert(1);
+    height: 20px;
+    width: 20px;
+    margin: 16px;
+    
+}
+.songList li{
+list-style-type: none;
+margin: 10px;
+
+}
+.songList {
+    height: 344px;
+    overflow-y: scroll;
+}
+
+/* Custom Scrollbar */
+.songList::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+}
+
+.songList::-webkit-scrollbar-track {
+    background: grey; /* Grey color for the track */
+    border-radius: 10px; /* Optional: rounded corners for the track */
+}
+
+.songList::-webkit-scrollbar-thumb {
+    background-color: black; /* Black color for the thumb */
+    border-radius: 10px; /* Optional: rounded corners for the thumb */
+     /* Optional: space around the thumb, matching the track color */
+}
+
+.songList::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker grey color when hovering over the thumb */
+}
+
+.sideCard{
+    display: flex;
+  
+    justify-content: space-around;
+    align-items: center;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20rem;
+    margin: 10px;
+    
+}
+.artistName{
+    font-size: 12px;
+}
+.play2{
+    display: flex;
+}
+.seekBar{
+    background-color: white;
+    width: 100%;
+    height: 1px;
+    border: 1px solid white;
+}
+.history{
+    /* border: 2px solid red; */
+    width: 518px;
+    background-color: black;
+    margin: 5px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px solid rgb(34, 34, 34);
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+
+    z-index: 1000;
+}
+.oval {
+    border-radius: 9999px;
+    background-color: #1f1f1f;
+    padding: 10px;
+    width: 500px;
+    height: 40px;
+    
+
+}
+
+.history{
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 73%;
+    right: 10px;
+    top: 100px;
+    
+}
